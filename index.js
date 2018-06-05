@@ -43,5 +43,5 @@ app.post('/', function (req, res) {
     res.render('index', {guess: number1, gsentence: gsentence, gtries: tries});
     
 });
-//lancement du serveur sur le port 8080
-app.listen(8080);
+//lancement du serveur sur le port 8080 le ou est pour heroku
+app.listen(8080 || process.env.PORT);
