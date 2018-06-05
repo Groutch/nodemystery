@@ -44,4 +44,4 @@ app.post('/', function (req, res) {
     
 });
 //lancement du serveur sur le port 8080 le ou est pour heroku
-app.listen(8080 || process.env.PORT);
+app.listen(process.env.PORT || 8080);
